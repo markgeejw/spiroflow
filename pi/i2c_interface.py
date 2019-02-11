@@ -1,6 +1,8 @@
 #!/usr/bin/python
 """2 classes for temperature and air flow"""
-from smbus2 import SMBus, i2c_msg, SMBusWrapper
+from smbus2 import SMBus
+from smbus2 import SMBusWrapper
+from smbus2 import i2c_msg
 import time
 
 #TEMP_ADDRESS = 0x40
