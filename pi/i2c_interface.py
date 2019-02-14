@@ -8,7 +8,7 @@ import time
 #TEMP_ADDRESS = 0x40
 #WRITE_HUMIDITY_ADDRESS = 0xE5
 #WRITE_TEMPERATURE_ADDRESS = 0xE3
-class temperature_sensor:
+class TemperatureSensor:
     """My class to handle the readings from the SI7021 temp humid sensor
     """
     def __init__(self):
@@ -59,7 +59,7 @@ class temperature_sensor:
         self.temp_value = ((175.72*temp_word)/65536)-46.85
         return round(self.temp_value,2)
 
-class airflow_sensor:
+class AirflowSensor:
     def __init__(self):
         self.address = 0x48
         self.writeCommand = [0x84,0x83]
