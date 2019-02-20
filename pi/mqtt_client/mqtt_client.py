@@ -46,7 +46,7 @@ class MQTTClient:
             try:
                 self.client.connect(host, port)
                 connected = True
-            except:
+            except OSError:
                 pass
         
         # Subscribe to topic and start polling asynchronously

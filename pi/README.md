@@ -10,5 +10,9 @@ This is the code that runs off the pi zero. It uses an MQTT client in a pubsub a
 ## Installing dependences
 `pip install -r requirements.txt`
 
+## Testing
+Run in pi folder
+`python3 tests/mqtt_test.py`
+
 ## Usage
 `python3 main.py`

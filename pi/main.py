@@ -15,8 +15,8 @@
 
 # Import relevant modules
 import time
-from i2c_interface import TemperatureHumiditySensor, AirflowSensor
-from mqtt_client import MQTTClient
+from i2c_interface.i2c_interface import TemperatureHumiditySensor, AirflowSensor
+from mqtt_client.mqtt_client import MQTTClient
 
 # Define connection variables
 HOST = "test.mosquitto.org"
