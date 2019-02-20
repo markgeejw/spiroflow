@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Base styling for the navbar
 #mainNav {
   box-shadow: $box-shadow;
@@ -8,18 +7,10 @@
     font-family: $font-family-sans-serif;
     font-weight: $font-weight-bold;
     color: $gray-900;
-=======
-#mainNav {
-  background-color: fade-out($secondary, 0.1);
-  @include heading-font;
-  .navbar-brand {
-    color: $primary;
->>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
   }
   .navbar-nav {
     .nav-item {
       .nav-link {
-<<<<<<< HEAD
         color: $gray-600;
         font-family: $font-family-sans-serif;
         font-weight: $font-weight-bold;
@@ -78,31 +69,6 @@
             &:hover {
               color: $primary;
             }
-=======
-        color: fade-out($white, 0.3);
-
-        font-weight: 800;
-      }
-      &.active {
-        .nav-link {
-          color: $primary;
-        }
-      }
-    }
-  }
-  @media (min-width: 992px) {
-    .navbar-nav {
-      .nav-item {
-        .nav-link {
-          font-size: 0.9rem;
-          &:hover {
-            color: fade-out($white, 0.6);
-          }
-        }
-        &.active {
-          .nav-link:hover {
-            color: $primary;
->>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
           }
         }
       }
