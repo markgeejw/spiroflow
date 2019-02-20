@@ -32,7 +32,7 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-tech fixed-top py-3" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light navbar-tech fixed-top py-3" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">SPIROFLOW</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -116,7 +116,9 @@
           </h4>
           <p class="text-white-50 mb-4">Environmental parameters that affect your lung</p>
         </div>
-        <div class="col-lg-4"></div>
+        <div class="col-lg-4" id="measure-img">
+          <img src="img/lungs.png">
+        </div>
       </div>
     </div>
   </section>
@@ -189,9 +191,30 @@
         <div class="col-lg-6 text-left">
           <h2 class="text-center mt-0">How Spiroflow Works</h2>
           <hr class="divider my-4">
-          <h4><span class="fas fa-wind mb-3"></span> Airflow speed sensor</h4>
-          <h4><span class="fas fa-thermometer-half mb-3"></span> Temperature and humidity sensor</h4>
-          <h4><span class="fas fa-wifi mb-3"></span> Wireless connection to the cloud</h4>
+          <div class="row">
+            <div class="col-3 text-right">
+              <h4 class="fas fa-wind mb-3 d-block"></h4>
+            </div>
+            <div class="col-9 text-left">
+              <h4>Airflow speed sensor</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 text-right">
+              <h4 class="fas fa-thermometer mb-3 d-block"></h4>
+            </div>
+            <div class="col-9 text-left">
+              <h4>Temperature and humidity sensor</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3 text-right">
+              <h4 class="fas fa-wifi mb-3 d-block"></h4>
+            </div>
+            <div class="col-9 text-left">
+              <h4>Wireless connection to the cloud</h4>
+            </div>
+          </div>
         </div>
         <div class="col-lg-6" id="device"></div>
       </div>

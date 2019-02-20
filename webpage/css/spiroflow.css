@@ -15,14 +15,10 @@
   border-radius: 0.5rem;
 }
 
-#ui {
-  height: 100vh;
-}
-
 #ui-img img{
-  width: 120%;
-  min-height: 40rem;
-  margin-left: -20px;
+  width: 100%;
+  margin-top: -50px;
+  margin-bottom: -50px;
 }
 
 #google-button img{
@@ -50,26 +46,26 @@
 }
 
 #dashboard {
-  margin-top: -10px;
-  margin-left: 30px;
+  margin-top: -7px;
 }
 
 #price-img img{
   width: 30%;
   margin: auto;
+  padding-top: 50px;
+  padding-bottom: 0;
+  min-height: 30%;
+}
+
+#measure {
+  min-height: 40rem;
   padding-top: 72px;
   padding-bottom: 0;
 }
 
-#measure {
-  background-image: url("../img/lungs.png");
-  background-size: 80vh;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  min-height: 40rem;
-  padding-top: 72px;
-  padding-bottom: 0;
+#measure-img img{
+  width:150%;
+  max-width: 450px; 
 }
 
 #diagnosis {
@@ -85,7 +81,7 @@
 
 #device {
   background-image: url("../img/device.jpg");
-  background-size: 40vh;
+  background-size: 70vh;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -93,31 +89,13 @@
   padding-bottom: 0;
 }
 
-#myflow {
-  height: 100vh;
-}
-
-#mockup {
-  background-image: url("../img/mockup_mac.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  height: 100%;
+#mockup img{
+  height: 90vh;
   padding-bottom: 0;
 }
 
-#login {
-  height: 100vh;
-}
-
-#login-screen {
-  background-image: url("../img/login.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  height: 110%;
+#login-screen img {
+  width: 100%;
   padding-bottom: 0;
 }
 
