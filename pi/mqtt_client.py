@@ -39,7 +39,7 @@ class MQTTClient:
         self.client.tls_set(ca_certs="./encryption/mosquitto.org.crt", certfile="./encryption/client.crt",keyfile="./encryption/client.key")
         
         # Force connection with while try loop
-        # Ignores the buggy exceptions thrown by mosquitto
+        # Ignores the buggy OSError exceptions thrown by mosquitto
         # Not the most elegant, but is sufficient to ensure connection
         connected = False
         while not connected:

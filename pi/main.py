@@ -15,7 +15,7 @@
 
 # Import relevant modules
 import time
-from i2c_interface import TemperatureSensor, AirflowSensor
+from i2c_interface import TemperatureHumiditySensor, AirflowSensor
 from mqtt_client import MQTTClient
 
 # Define connection variables
@@ -25,21 +25,27 @@ TOPIC = "IC.embedded/benchpsu"
 
 def main():
     # Initialize sensors
-    temperature_sensor = TemperatureHumiditySensor()
+    temperature_humidity_sensor = TemperatureHumiditySensor()
     airflow_sensor = AirflowSensor()
     # Initialize MQTT client
     mqtt_client = MQTTClient(HOST, PORT, TOPIC)
     print("Connected to MQTT Broker")
 
+    # Poll in a continuous loop for data
     while True:
+        # Check if data is being requested from UI
         if mqtt_client.flow_flag:
-            temperature_sensor.humidity_temp_set()
-            h = temperature_sensor.humidity_get()
-            t = temperature_sensor.temp_get()
+            # Send command to sensor to read the humidity then temperature
+            temperature_humidity_sensor.humidity_temp_set()
+            # Retrieve values of temperature, humidity, air flow
+            h = temperature_humidity_sensor.humidity_get()
+            t = temperature_humidity_sensor.temp_get()
             f = airflow_sensor.airflow_get()
 
+            # Push messages in a simple string format
             mqtt_client.client.publish(TOPIC,'f'+str(f) + ' t' + str(t) + ' h' + str(h),2)
             time.sleep(0.1)
+        # Else, do nothing
         else:
             time.sleep(0.1)
     
