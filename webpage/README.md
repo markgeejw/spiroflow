@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+# [Start Bootstrap - Creative](https://startbootstrap.com/template-overviews/creative/)
+
+[Creative](http://startbootstrap.com/template-overviews/creative/) is a one page creative theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+
+## Preview
+
+[![Creative Preview](https://startbootstrap.com/assets/img/screenshots/themes/creative.png)](https://blackrockdigital.github.io/startbootstrap-creative/)
+
+**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-creative/)**
+
+## Status
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-creative/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/startbootstrap-creative.svg)](https://www.npmjs.com/package/startbootstrap-creative)
+[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-creative.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-creative)
+[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-creative/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-creative)
+[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-creative/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-creative?type=dev)
+=======
 # [Start Bootstrap - Business Casual](https://startbootstrap.com/template-overviews/business-casual/)
 
 [Business Casual](http://startbootstrap.com/template-overviews/business-casual/) is a multipurpose website theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features a landing page, about page, blog page, and a contact page along with various custom styles and components.
@@ -15,14 +34,22 @@
 [![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-business-casual.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-business-casual)
 [![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-business-casual/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-business-casual)
 [![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-business-casual/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-business-casual?type=dev)
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
 ## Download and Installation
 
 To begin using this template, choose one of the following options to get started:
+<<<<<<< HEAD
+* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/creative/)
+* Install via npm: `npm i startbootstrap-creative`
+* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-creative.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-creative)
+=======
 * [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/business-casual/)
 * Install via npm: `npm i startbootstrap-business-casual`
 * Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-business-casual.git`
 * [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-business-casual)
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
 ## Usage
 
@@ -32,12 +59,20 @@ After downloading, simply edit the HTML and CSS files included with the template
 
 ### Advanced Usage
 
+<<<<<<< HEAD
+After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+=======
 After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
 #### Gulp Tasks
 
 - `gulp` the default task that builds everything
+<<<<<<< HEAD
+- `gulp watch` browserSync opens the project in your default browser and live reloads when changes are made
+=======
 - `gulp dev` browserSync opens the project in your default browser and live reloads when changes are made
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 - `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
 - `gulp js` minifies the themes JS file
 - `gulp vendor` copies dependencies from node_modules to the vendor directory
@@ -46,7 +81,11 @@ You must have npm and Gulp installed globally on your machine in order to use th
 
 ## Bugs and Issues
 
+<<<<<<< HEAD
+Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-creative/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/creative/).
+=======
 Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-business-casual/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/business-casual/).
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
 ## About
 
@@ -65,4 +104,8 @@ Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework 
 
 ## Copyright and License
 
+<<<<<<< HEAD
+Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-creative/blob/gh-pages/LICENSE) license.
+=======
 Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-business-casual/blob/gh-pages/LICENSE) license.
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad

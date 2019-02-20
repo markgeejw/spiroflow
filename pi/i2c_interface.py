@@ -1,10 +1,44 @@
+<<<<<<< HEAD
+#!/usr/bin/python3
+##################################################
+## I2C Interface Class
+## Defines the interface for communicating with
+## air flow sensor and temperature humidity sensor
+## using I2C
+##################################################
+## Unlicensed
+##################################################
+## Author: benchPSU
+## Copyright: Copyright 2019, Spiroflow
+## Credits: [Mark Gee, Joel Yeow, Harvin Iriawan, Raymond Ooi]
+## License: None
+## Version: 1.0
+## Maintainer: Mark Gee
+## Status: active
+##################################################
+
+# Import relevant modules
+=======
 #!/usr/bin/python
 """2 classes for temperature and air flow"""
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 from smbus2 import SMBus
 from smbus2 import SMBusWrapper
 from smbus2 import i2c_msg
 import time
 
+<<<<<<< HEAD
+class TemperatureHumiditySensor:
+    """Class to handle the readings from the SI7021 temp humid sensor
+    """
+    def __init__(self):
+        # I2C address
+        self.address = 0x40
+        # Commands for I2C
+        self.humidityCommand = 0xF5
+        self.tempCommand = 0xE0
+        # Initialize temperature and humidity readings
+=======
 #TEMP_ADDRESS = 0x40
 #WRITE_HUMIDITY_ADDRESS = 0xE5
 #WRITE_TEMPERATURE_ADDRESS = 0xE3
@@ -15,6 +49,7 @@ class TemperatureSensor:
         self.address = 0x40
         self.humidityCommand = 0xF5
         self.tempCommand = 0xE0
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
         self.temp_value = None
         self.humidity_value = None
 
@@ -60,7 +95,14 @@ class TemperatureSensor:
         return round(self.temp_value,2)
 
 class AirflowSensor:
+<<<<<<< HEAD
+    """Class to handle the readings from the D6F-V air flow sensor, wired with
+    the ADS1115 ADC."""
     def __init__(self):
+        # I2C addresses
+=======
+    def __init__(self):
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
         self.address = 0x48
         self.writeCommand = [0x84,0x83]
 

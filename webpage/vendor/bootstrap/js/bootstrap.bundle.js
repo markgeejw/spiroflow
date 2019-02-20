@@ -1,13 +1,23 @@
 /*!
+<<<<<<< HEAD
+  * Bootstrap v4.3.1 (https://getbootstrap.com/)
+  * Copyright 2011-2019 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+=======
   * Bootstrap v4.2.1 (https://getbootstrap.com/)
   * Copyright 2011-2018 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery')) :
   typeof define === 'function' && define.amd ? define(['exports', 'jquery'], factory) :
+<<<<<<< HEAD
+  (global = global || self, factory(global.bootstrap = {}, global.jQuery));
+}(this, function (exports, $) { 'use strict';
+=======
   (factory((global.bootstrap = {}),global.jQuery));
 }(this, (function (exports,$) { 'use strict';
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
   $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
 
@@ -69,7 +79,11 @@
 
   /**
    * --------------------------------------------------------------------------
+<<<<<<< HEAD
+   * Bootstrap (v4.3.1): util.js
+=======
    * Bootstrap (v4.2.1): util.js
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -145,7 +159,15 @@
         selector = hrefAttr && hrefAttr !== '#' ? hrefAttr.trim() : '';
       }
 
+<<<<<<< HEAD
+      try {
+        return document.querySelector(selector) ? selector : null;
+      } catch (err) {
+        return null;
+      }
+=======
       return selector && document.querySelector(selector) ? selector : null;
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
     },
     getTransitionDurationFromElement: function getTransitionDurationFromElement(element) {
       if (!element) {
@@ -225,7 +247,11 @@
    */
 
   var NAME = 'alert';
+<<<<<<< HEAD
+  var VERSION = '4.3.1';
+=======
   var VERSION = '4.2.1';
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
   var DATA_KEY = 'bs.alert';
   var EVENT_KEY = "." + DATA_KEY;
   var DATA_API_KEY = '.data-api';
@@ -280,8 +306,13 @@
     _proto.dispose = function dispose() {
       $.removeData(this._element, DATA_KEY);
       this._element = null;
+<<<<<<< HEAD
+    } // Private
+    ;
+=======
     }; // Private
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     _proto._getRootElement = function _getRootElement(element) {
       var selector = Util.getSelectorFromElement(element);
@@ -323,8 +354,13 @@
 
     _proto._destroyElement = function _destroyElement(element) {
       $(element).detach().trigger(Event.CLOSED).remove();
+<<<<<<< HEAD
+    } // Static
+    ;
+=======
     }; // Static
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     Alert._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -390,7 +426,11 @@
    */
 
   var NAME$1 = 'button';
+<<<<<<< HEAD
+  var VERSION$1 = '4.3.1';
+=======
   var VERSION$1 = '4.2.1';
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
   var DATA_KEY$1 = 'bs.button';
   var EVENT_KEY$1 = "." + DATA_KEY$1;
   var DATA_API_KEY$1 = '.data-api';
@@ -476,8 +516,13 @@
     _proto.dispose = function dispose() {
       $.removeData(this._element, DATA_KEY$1);
       this._element = null;
+<<<<<<< HEAD
+    } // Static
+    ;
+=======
     }; // Static
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     Button._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -544,7 +589,11 @@
    */
 
   var NAME$2 = 'carousel';
+<<<<<<< HEAD
+  var VERSION$2 = '4.3.1';
+=======
   var VERSION$2 = '4.2.1';
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
   var DATA_KEY$2 = 'bs.carousel';
   var EVENT_KEY$2 = "." + DATA_KEY$2;
   var DATA_API_KEY$2 = '.data-api';
@@ -739,8 +788,13 @@
       this._isSliding = null;
       this._activeElement = null;
       this._indicatorsElement = null;
+<<<<<<< HEAD
+    } // Private
+    ;
+=======
     }; // Private
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     _proto._getConfig = function _getConfig(config) {
       config = _objectSpread({}, Default, config);
@@ -784,7 +838,13 @@
         });
       }
 
+<<<<<<< HEAD
+      if (this._config.touch) {
+        this._addTouchEventListeners();
+      }
+=======
       this._addTouchEventListeners();
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
     };
 
     _proto._addTouchEventListeners = function _addTouchEventListeners() {
@@ -1025,8 +1085,13 @@
       if (isCycling) {
         this.cycle();
       }
+<<<<<<< HEAD
+    } // Static
+    ;
+=======
     }; // Static
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     Carousel._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -1053,7 +1118,11 @@
           }
 
           data[action]();
+<<<<<<< HEAD
+        } else if (_config.interval && _config.ride) {
+=======
         } else if (_config.interval) {
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
           data.pause();
           data.cycle();
         }
@@ -1142,7 +1211,11 @@
    */
 
   var NAME$3 = 'collapse';
+<<<<<<< HEAD
+  var VERSION$3 = '4.3.1';
+=======
   var VERSION$3 = '4.2.1';
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
   var DATA_KEY$3 = 'bs.collapse';
   var EVENT_KEY$3 = "." + DATA_KEY$3;
   var DATA_API_KEY$3 = '.data-api';
@@ -1364,8 +1437,13 @@
       this._element = null;
       this._triggerArray = null;
       this._isTransitioning = null;
+<<<<<<< HEAD
+    } // Private
+    ;
+=======
     }; // Private
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     _proto._getConfig = function _getConfig(config) {
       config = _objectSpread({}, Default$1, config);
@@ -1409,8 +1487,13 @@
       if (triggerArray.length) {
         $(triggerArray).toggleClass(ClassName$3.COLLAPSED, !isOpen).attr('aria-expanded', isOpen);
       }
+<<<<<<< HEAD
+    } // Static
+    ;
+=======
     }; // Static
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     Collapse._getTargetFromElement = function _getTargetFromElement(element) {
       var selector = Util.getSelectorFromElement(element);
@@ -1497,7 +1580,11 @@
 
   /**!
    * @fileOverview Kickass library to create and place poppers near their reference elements.
+<<<<<<< HEAD
+   * @version 1.14.7
+=======
    * @version 1.14.6
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
    * @license
    * Copyright (c) 2016 Federico Zivolo and contributors
    *
@@ -2065,7 +2152,15 @@
     if (getStyleComputedProperty(element, 'position') === 'fixed') {
       return true;
     }
+<<<<<<< HEAD
+    var parentNode = getParentNode(element);
+    if (!parentNode) {
+      return false;
+    }
+    return isFixed(parentNode);
+=======
     return isFixed(getParentNode(element));
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
   }
 
   /**
@@ -2721,6 +2816,25 @@
     var _data$offsets = data.offsets,
         popper = _data$offsets.popper,
         reference = _data$offsets.reference;
+<<<<<<< HEAD
+    var round = Math.round,
+        floor = Math.floor;
+
+    var noRound = function noRound(v) {
+      return v;
+    };
+
+    var referenceWidth = round(reference.width);
+    var popperWidth = round(popper.width);
+
+    var isVertical = ['left', 'right'].indexOf(data.placement) !== -1;
+    var isVariation = data.placement.indexOf('-') !== -1;
+    var sameWidthParity = referenceWidth % 2 === popperWidth % 2;
+    var bothOddWidth = referenceWidth % 2 === 1 && popperWidth % 2 === 1;
+
+    var horizontalToInteger = !shouldRound ? noRound : isVertical || isVariation || sameWidthParity ? round : floor;
+    var verticalToInteger = !shouldRound ? noRound : round;
+=======
 
 
     var isVertical = ['left', 'right'].indexOf(data.placement) !== -1;
@@ -2733,6 +2847,7 @@
 
     var horizontalToInteger = !shouldRound ? noRound : isVertical || isVariation || sameWidthOddness ? Math.round : Math.floor;
     var verticalToInteger = !shouldRound ? noRound : Math.round;
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     return {
       left: horizontalToInteger(bothOddWidth && !isVariation && shouldRound ? popper.left - 1 : popper.left),
@@ -4072,7 +4187,11 @@
    */
 
   var NAME$4 = 'dropdown';
+<<<<<<< HEAD
+  var VERSION$4 = '4.3.1';
+=======
   var VERSION$4 = '4.2.1';
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
   var DATA_KEY$4 = 'bs.dropdown';
   var EVENT_KEY$4 = "." + DATA_KEY$4;
   var DATA_API_KEY$4 = '.data-api';
@@ -4301,8 +4420,13 @@
       if (this._popper !== null) {
         this._popper.scheduleUpdate();
       }
+<<<<<<< HEAD
+    } // Private
+    ;
+=======
     }; // Private
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     _proto._addEventListeners = function _addEventListeners() {
       var _this = this;
@@ -4358,6 +4482,30 @@
       return $(this._element).closest('.navbar').length > 0;
     };
 
+<<<<<<< HEAD
+    _proto._getOffset = function _getOffset() {
+      var _this2 = this;
+
+      var offset = {};
+
+      if (typeof this._config.offset === 'function') {
+        offset.fn = function (data) {
+          data.offsets = _objectSpread({}, data.offsets, _this2._config.offset(data.offsets, _this2._element) || {});
+          return data;
+        };
+      } else {
+        offset.offset = this._config.offset;
+      }
+
+      return offset;
+    };
+
+    _proto._getPopperConfig = function _getPopperConfig() {
+      var popperConfig = {
+        placement: this._getPlacement(),
+        modifiers: {
+          offset: this._getOffset(),
+=======
     _proto._getPopperConfig = function _getPopperConfig() {
       var _this2 = this;
 
@@ -4376,6 +4524,7 @@
         placement: this._getPlacement(),
         modifiers: {
           offset: offsetConf,
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
           flip: {
             enabled: this._config.flip
           },
@@ -4393,8 +4542,13 @@
       }
 
       return popperConfig;
+<<<<<<< HEAD
+    } // Static
+    ;
+=======
     }; // Static
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     Dropdown._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -4478,8 +4632,13 @@
       }
 
       return parent || element.parentNode;
+<<<<<<< HEAD
+    } // eslint-disable-next-line complexity
+    ;
+=======
     }; // eslint-disable-next-line complexity
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     Dropdown._dataApiKeydownHandler = function _dataApiKeydownHandler(event) {
       // If not input/textarea:
@@ -4594,7 +4753,11 @@
    */
 
   var NAME$5 = 'modal';
+<<<<<<< HEAD
+  var VERSION$5 = '4.3.1';
+=======
   var VERSION$5 = '4.2.1';
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
   var DATA_KEY$5 = 'bs.modal';
   var EVENT_KEY$5 = "." + DATA_KEY$5;
   var DATA_API_KEY$5 = '.data-api';
@@ -4627,6 +4790,10 @@
     CLICK_DATA_API: "click" + EVENT_KEY$5 + DATA_API_KEY$5
   };
   var ClassName$5 = {
+<<<<<<< HEAD
+    SCROLLABLE: 'modal-dialog-scrollable',
+=======
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
     SCROLLBAR_MEASURER: 'modal-scrollbar-measure',
     BACKDROP: 'modal-backdrop',
     OPEN: 'modal-open',
@@ -4635,6 +4802,10 @@
   };
   var Selector$5 = {
     DIALOG: '.modal-dialog',
+<<<<<<< HEAD
+    MODAL_BODY: '.modal-body',
+=======
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
     DATA_TOGGLE: '[data-toggle="modal"]',
     DATA_DISMISS: '[data-dismiss="modal"]',
     FIXED_CONTENT: '.fixed-top, .fixed-bottom, .is-fixed, .sticky-top',
@@ -4787,8 +4958,13 @@
 
     _proto.handleUpdate = function handleUpdate() {
       this._adjustDialog();
+<<<<<<< HEAD
+    } // Private
+    ;
+=======
     }; // Private
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     _proto._getConfig = function _getConfig(config) {
       config = _objectSpread({}, Default$3, config);
@@ -4812,7 +4988,15 @@
 
       this._element.setAttribute('aria-modal', true);
 
+<<<<<<< HEAD
+      if ($(this._dialog).hasClass(ClassName$5.SCROLLABLE)) {
+        this._dialog.querySelector(Selector$5.MODAL_BODY).scrollTop = 0;
+      } else {
+        this._element.scrollTop = 0;
+      }
+=======
       this._element.scrollTop = 0;
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
       if (transition) {
         Util.reflow(this._element);
@@ -4982,11 +5166,19 @@
       } else if (callback) {
         callback();
       }
+<<<<<<< HEAD
+    } // ----------------------------------------------------------------------
+    // the following methods are used to handle overflowing modals
+    // todo (fat): these should probably be refactored out of modal.js
+    // ----------------------------------------------------------------------
+    ;
+=======
     }; // ----------------------------------------------------------------------
     // the following methods are used to handle overflowing modals
     // todo (fat): these should probably be refactored out of modal.js
     // ----------------------------------------------------------------------
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     _proto._adjustDialog = function _adjustDialog() {
       var isModalOverflowing = this._element.scrollHeight > document.documentElement.clientHeight;
@@ -5071,8 +5263,13 @@
       var scrollbarWidth = scrollDiv.getBoundingClientRect().width - scrollDiv.clientWidth;
       document.body.removeChild(scrollDiv);
       return scrollbarWidth;
+<<<<<<< HEAD
+    } // Static
+    ;
+=======
     }; // Static
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     Modal._jQueryInterface = function _jQueryInterface(config, relatedTarget) {
       return this.each(function () {
@@ -5164,18 +5361,150 @@
   };
 
   /**
+<<<<<<< HEAD
+   * --------------------------------------------------------------------------
+   * Bootstrap (v4.3.1): tools/sanitizer.js
+   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+   * --------------------------------------------------------------------------
+   */
+  var uriAttrs = ['background', 'cite', 'href', 'itemtype', 'longdesc', 'poster', 'src', 'xlink:href'];
+  var ARIA_ATTRIBUTE_PATTERN = /^aria-[\w-]*$/i;
+  var DefaultWhitelist = {
+    // Global attributes allowed on any supplied element below.
+    '*': ['class', 'dir', 'id', 'lang', 'role', ARIA_ATTRIBUTE_PATTERN],
+    a: ['target', 'href', 'title', 'rel'],
+    area: [],
+    b: [],
+    br: [],
+    col: [],
+    code: [],
+    div: [],
+    em: [],
+    hr: [],
+    h1: [],
+    h2: [],
+    h3: [],
+    h4: [],
+    h5: [],
+    h6: [],
+    i: [],
+    img: ['src', 'alt', 'title', 'width', 'height'],
+    li: [],
+    ol: [],
+    p: [],
+    pre: [],
+    s: [],
+    small: [],
+    span: [],
+    sub: [],
+    sup: [],
+    strong: [],
+    u: [],
+    ul: []
+    /**
+     * A pattern that recognizes a commonly useful subset of URLs that are safe.
+     *
+     * Shoutout to Angular 7 https://github.com/angular/angular/blob/7.2.4/packages/core/src/sanitization/url_sanitizer.ts
+     */
+
+  };
+  var SAFE_URL_PATTERN = /^(?:(?:https?|mailto|ftp|tel|file):|[^&:/?#]*(?:[/?#]|$))/gi;
+  /**
+   * A pattern that matches safe data URLs. Only matches image, video and audio types.
+   *
+   * Shoutout to Angular 7 https://github.com/angular/angular/blob/7.2.4/packages/core/src/sanitization/url_sanitizer.ts
+   */
+
+  var DATA_URL_PATTERN = /^data:(?:image\/(?:bmp|gif|jpeg|jpg|png|tiff|webp)|video\/(?:mpeg|mp4|ogg|webm)|audio\/(?:mp3|oga|ogg|opus));base64,[a-z0-9+/]+=*$/i;
+
+  function allowedAttribute(attr, allowedAttributeList) {
+    var attrName = attr.nodeName.toLowerCase();
+
+    if (allowedAttributeList.indexOf(attrName) !== -1) {
+      if (uriAttrs.indexOf(attrName) !== -1) {
+        return Boolean(attr.nodeValue.match(SAFE_URL_PATTERN) || attr.nodeValue.match(DATA_URL_PATTERN));
+      }
+
+      return true;
+    }
+
+    var regExp = allowedAttributeList.filter(function (attrRegex) {
+      return attrRegex instanceof RegExp;
+    }); // Check if a regular expression validates the attribute.
+
+    for (var i = 0, l = regExp.length; i < l; i++) {
+      if (attrName.match(regExp[i])) {
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+  function sanitizeHtml(unsafeHtml, whiteList, sanitizeFn) {
+    if (unsafeHtml.length === 0) {
+      return unsafeHtml;
+    }
+
+    if (sanitizeFn && typeof sanitizeFn === 'function') {
+      return sanitizeFn(unsafeHtml);
+    }
+
+    var domParser = new window.DOMParser();
+    var createdDocument = domParser.parseFromString(unsafeHtml, 'text/html');
+    var whitelistKeys = Object.keys(whiteList);
+    var elements = [].slice.call(createdDocument.body.querySelectorAll('*'));
+
+    var _loop = function _loop(i, len) {
+      var el = elements[i];
+      var elName = el.nodeName.toLowerCase();
+
+      if (whitelistKeys.indexOf(el.nodeName.toLowerCase()) === -1) {
+        el.parentNode.removeChild(el);
+        return "continue";
+      }
+
+      var attributeList = [].slice.call(el.attributes);
+      var whitelistedAttributes = [].concat(whiteList['*'] || [], whiteList[elName] || []);
+      attributeList.forEach(function (attr) {
+        if (!allowedAttribute(attr, whitelistedAttributes)) {
+          el.removeAttribute(attr.nodeName);
+        }
+      });
+    };
+
+    for (var i = 0, len = elements.length; i < len; i++) {
+      var _ret = _loop(i, len);
+
+      if (_ret === "continue") continue;
+    }
+
+    return createdDocument.body.innerHTML;
+  }
+
+  /**
+=======
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
    * ------------------------------------------------------------------------
    * Constants
    * ------------------------------------------------------------------------
    */
 
   var NAME$6 = 'tooltip';
+<<<<<<< HEAD
+  var VERSION$6 = '4.3.1';
+=======
   var VERSION$6 = '4.2.1';
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
   var DATA_KEY$6 = 'bs.tooltip';
   var EVENT_KEY$6 = "." + DATA_KEY$6;
   var JQUERY_NO_CONFLICT$6 = $.fn[NAME$6];
   var CLASS_PREFIX = 'bs-tooltip';
   var BSCLS_PREFIX_REGEX = new RegExp("(^|\\s)" + CLASS_PREFIX + "\\S+", 'g');
+<<<<<<< HEAD
+  var DISALLOWED_ATTRIBUTES = ['sanitize', 'whiteList', 'sanitizeFn'];
+=======
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
   var DefaultType$4 = {
     animation: 'boolean',
     template: 'string',
@@ -5185,10 +5514,20 @@
     html: 'boolean',
     selector: '(string|boolean)',
     placement: '(string|function)',
+<<<<<<< HEAD
+    offset: '(number|string|function)',
+    container: '(string|element|boolean)',
+    fallbackPlacement: '(string|array)',
+    boundary: '(string|element)',
+    sanitize: 'boolean',
+    sanitizeFn: '(null|function)',
+    whiteList: 'object'
+=======
     offset: '(number|string)',
     container: '(string|element|boolean)',
     fallbackPlacement: '(string|array)',
     boundary: '(string|element)'
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
   };
   var AttachmentMap$1 = {
     AUTO: 'auto',
@@ -5209,7 +5548,14 @@
     offset: 0,
     container: false,
     fallbackPlacement: 'flip',
+<<<<<<< HEAD
+    boundary: 'scrollParent',
+    sanitize: true,
+    sanitizeFn: null,
+    whiteList: DefaultWhitelist
+=======
     boundary: 'scrollParent'
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
   };
   var HoverState = {
     SHOW: 'show',
@@ -5394,9 +5740,13 @@
         this._popper = new Popper(this.element, tip, {
           placement: attachment,
           modifiers: {
+<<<<<<< HEAD
+            offset: this._getOffset(),
+=======
             offset: {
               offset: this.config.offset
             },
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
             flip: {
               behavior: this.config.fallbackPlacement
             },
@@ -5505,8 +5855,13 @@
       if (this._popper !== null) {
         this._popper.scheduleUpdate();
       }
+<<<<<<< HEAD
+    } // Protected
+    ;
+=======
     }; // Protected
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     _proto.isWithContent = function isWithContent() {
       return Boolean(this.getTitle());
@@ -5528,19 +5883,40 @@
     };
 
     _proto.setElementContent = function setElementContent($element, content) {
+<<<<<<< HEAD
+      if (typeof content === 'object' && (content.nodeType || content.jquery)) {
+        // Content is a DOM node or a jQuery
+        if (this.config.html) {
+=======
       var html = this.config.html;
 
       if (typeof content === 'object' && (content.nodeType || content.jquery)) {
         // Content is a DOM node or a jQuery
         if (html) {
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
           if (!$(content).parent().is($element)) {
             $element.empty().append(content);
           }
         } else {
           $element.text($(content).text());
         }
+<<<<<<< HEAD
+
+        return;
+      }
+
+      if (this.config.html) {
+        if (this.config.sanitize) {
+          content = sanitizeHtml(content, this.config.whiteList, this.config.sanitizeFn);
+        }
+
+        $element.html(content);
+      } else {
+        $element.text(content);
+=======
       } else {
         $element[html ? 'html' : 'text'](content);
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
       }
     };
 
@@ -5552,8 +5928,30 @@
       }
 
       return title;
+<<<<<<< HEAD
+    } // Private
+    ;
+
+    _proto._getOffset = function _getOffset() {
+      var _this3 = this;
+
+      var offset = {};
+
+      if (typeof this.config.offset === 'function') {
+        offset.fn = function (data) {
+          data.offsets = _objectSpread({}, data.offsets, _this3.config.offset(data.offsets, _this3.element) || {});
+          return data;
+        };
+      } else {
+        offset.offset = this.config.offset;
+      }
+
+      return offset;
+    };
+=======
     }; // Private
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     _proto._getContainer = function _getContainer() {
       if (this.config.container === false) {
@@ -5572,11 +5970,27 @@
     };
 
     _proto._setListeners = function _setListeners() {
+<<<<<<< HEAD
+      var _this4 = this;
+=======
       var _this3 = this;
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
       var triggers = this.config.trigger.split(' ');
       triggers.forEach(function (trigger) {
         if (trigger === 'click') {
+<<<<<<< HEAD
+          $(_this4.element).on(_this4.constructor.Event.CLICK, _this4.config.selector, function (event) {
+            return _this4.toggle(event);
+          });
+        } else if (trigger !== Trigger.MANUAL) {
+          var eventIn = trigger === Trigger.HOVER ? _this4.constructor.Event.MOUSEENTER : _this4.constructor.Event.FOCUSIN;
+          var eventOut = trigger === Trigger.HOVER ? _this4.constructor.Event.MOUSELEAVE : _this4.constructor.Event.FOCUSOUT;
+          $(_this4.element).on(eventIn, _this4.config.selector, function (event) {
+            return _this4._enter(event);
+          }).on(eventOut, _this4.config.selector, function (event) {
+            return _this4._leave(event);
+=======
           $(_this3.element).on(_this3.constructor.Event.CLICK, _this3.config.selector, function (event) {
             return _this3.toggle(event);
           });
@@ -5587,12 +6001,18 @@
             return _this3._enter(event);
           }).on(eventOut, _this3.config.selector, function (event) {
             return _this3._leave(event);
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
           });
         }
       });
       $(this.element).closest('.modal').on('hide.bs.modal', function () {
+<<<<<<< HEAD
+        if (_this4.element) {
+          _this4.hide();
+=======
         if (_this3.element) {
           _this3.hide();
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
         }
       });
 
@@ -5691,7 +6111,17 @@
     };
 
     _proto._getConfig = function _getConfig(config) {
+<<<<<<< HEAD
+      var dataAttributes = $(this.element).data();
+      Object.keys(dataAttributes).forEach(function (dataAttr) {
+        if (DISALLOWED_ATTRIBUTES.indexOf(dataAttr) !== -1) {
+          delete dataAttributes[dataAttr];
+        }
+      });
+      config = _objectSpread({}, this.constructor.Default, dataAttributes, typeof config === 'object' && config ? config : {});
+=======
       config = _objectSpread({}, this.constructor.Default, $(this.element).data(), typeof config === 'object' && config ? config : {});
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
       if (typeof config.delay === 'number') {
         config.delay = {
@@ -5709,6 +6139,14 @@
       }
 
       Util.typeCheckConfig(NAME$6, config, this.constructor.DefaultType);
+<<<<<<< HEAD
+
+      if (config.sanitize) {
+        config.template = sanitizeHtml(config.template, config.whiteList, config.sanitizeFn);
+      }
+
+=======
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
       return config;
     };
 
@@ -5757,8 +6195,13 @@
       this.hide();
       this.show();
       this.config.animation = initConfigAnimation;
+<<<<<<< HEAD
+    } // Static
+    ;
+=======
     }; // Static
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     Tooltip._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -5846,7 +6289,11 @@
    */
 
   var NAME$7 = 'popover';
+<<<<<<< HEAD
+  var VERSION$7 = '4.3.1';
+=======
   var VERSION$7 = '4.2.1';
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
   var DATA_KEY$7 = 'bs.popover';
   var EVENT_KEY$7 = "." + DATA_KEY$7;
   var JQUERY_NO_CONFLICT$7 = $.fn[NAME$7];
@@ -5929,8 +6376,13 @@
 
       this.setElementContent($tip.find(Selector$7.CONTENT), content);
       $tip.removeClass(ClassName$7.FADE + " " + ClassName$7.SHOW);
+<<<<<<< HEAD
+    } // Private
+    ;
+=======
     }; // Private
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     _proto._getContent = function _getContent() {
       return this.element.getAttribute('data-content') || this.config.content;
@@ -5943,8 +6395,13 @@
       if (tabClass !== null && tabClass.length > 0) {
         $tip.removeClass(tabClass.join(''));
       }
+<<<<<<< HEAD
+    } // Static
+    ;
+=======
     }; // Static
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     Popover._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -6033,7 +6490,11 @@
    */
 
   var NAME$8 = 'scrollspy';
+<<<<<<< HEAD
+  var VERSION$8 = '4.3.1';
+=======
   var VERSION$8 = '4.2.1';
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
   var DATA_KEY$8 = 'bs.scrollspy';
   var EVENT_KEY$8 = "." + DATA_KEY$8;
   var DATA_API_KEY$6 = '.data-api';
@@ -6156,8 +6617,13 @@
       this._targets = null;
       this._activeTarget = null;
       this._scrollHeight = null;
+<<<<<<< HEAD
+    } // Private
+    ;
+=======
     }; // Private
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     _proto._getConfig = function _getConfig(config) {
       config = _objectSpread({}, Default$6, typeof config === 'object' && config ? config : {});
@@ -6264,8 +6730,13 @@
       }).forEach(function (node) {
         return node.classList.remove(ClassName$8.ACTIVE);
       });
+<<<<<<< HEAD
+    } // Static
+    ;
+=======
     }; // Static
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     ScrollSpy._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -6340,7 +6811,11 @@
    */
 
   var NAME$9 = 'tab';
+<<<<<<< HEAD
+  var VERSION$9 = '4.3.1';
+=======
   var VERSION$9 = '4.2.1';
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
   var DATA_KEY$9 = 'bs.tab';
   var EVENT_KEY$9 = "." + DATA_KEY$9;
   var DATA_API_KEY$7 = '.data-api';
@@ -6448,8 +6923,13 @@
     _proto.dispose = function dispose() {
       $.removeData(this._element, DATA_KEY$9);
       this._element = null;
+<<<<<<< HEAD
+    } // Private
+    ;
+=======
     }; // Private
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     _proto._activate = function _activate(element, container, callback) {
       var _this2 = this;
@@ -6491,7 +6971,14 @@
       }
 
       Util.reflow(element);
+<<<<<<< HEAD
+
+      if (element.classList.contains(ClassName$9.FADE)) {
+        element.classList.add(ClassName$9.SHOW);
+      }
+=======
       $(element).addClass(ClassName$9.SHOW);
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
       if (element.parentNode && $(element.parentNode).hasClass(ClassName$9.DROPDOWN_MENU)) {
         var dropdownElement = $(element).closest(Selector$9.DROPDOWN)[0];
@@ -6507,8 +6994,13 @@
       if (callback) {
         callback();
       }
+<<<<<<< HEAD
+    } // Static
+    ;
+=======
     }; // Static
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     Tab._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -6572,7 +7064,11 @@
    */
 
   var NAME$a = 'toast';
+<<<<<<< HEAD
+  var VERSION$a = '4.3.1';
+=======
   var VERSION$a = '4.2.1';
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
   var DATA_KEY$a = 'bs.toast';
   var EVENT_KEY$a = "." + DATA_KEY$a;
   var JQUERY_NO_CONFLICT$a = $.fn[NAME$a];
@@ -6687,8 +7183,13 @@
       $.removeData(this._element, DATA_KEY$a);
       this._element = null;
       this._config = null;
+<<<<<<< HEAD
+    } // Private
+    ;
+=======
     }; // Private
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     _proto._getConfig = function _getConfig(config) {
       config = _objectSpread({}, Default$7, $(this._element).data(), typeof config === 'object' && config ? config : {});
@@ -6721,8 +7222,13 @@
       } else {
         complete();
       }
+<<<<<<< HEAD
+    } // Static
+    ;
+=======
     }; // Static
 
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 
     Toast._jQueryInterface = function _jQueryInterface(config) {
       return this.each(function () {
@@ -6756,6 +7262,14 @@
       get: function get() {
         return DefaultType$7;
       }
+<<<<<<< HEAD
+    }, {
+      key: "Default",
+      get: function get() {
+        return Default$7;
+      }
+=======
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
     }]);
 
     return Toast;
@@ -6777,7 +7291,11 @@
 
   /**
    * --------------------------------------------------------------------------
+<<<<<<< HEAD
+   * Bootstrap (v4.3.1): index.js
+=======
    * Bootstrap (v4.2.1): index.js
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -6814,5 +7332,9 @@
 
   Object.defineProperty(exports, '__esModule', { value: true });
 
+<<<<<<< HEAD
+}));
+=======
 })));
+>>>>>>> 24fd90abcd9d640a3ca4f4430f327117cf3ca8ad
 //# sourceMappingURL=bootstrap.bundle.js.map
