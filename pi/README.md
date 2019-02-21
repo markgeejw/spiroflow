@@ -1,5 +1,5 @@
 # Spiroflow Main Code
-This is the code that runs off the pi zero. It uses an MQTT client in a pubsub architecture for sending message and uses the I2C interface for reading values off the sensors (and ADC).
+This is the code that runs off the pi zero. It uses a MQTT client in a pubsub architecture for sending and receiving data to and from the cloud with SSL encryption. I2C interface is used for reading values off the sensors (and ADC).
 
 ## Components Used
 - Pi Zero W
@@ -12,6 +12,7 @@ This is the code that runs off the pi zero. It uses an MQTT client in a pubsub a
 
 ## Testing
 Run in pi folder
+
 `python3 tests/mqtt_test.py`
 
 ## Usage

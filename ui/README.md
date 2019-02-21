@@ -6,4 +6,4 @@ Open index.html to view
 
 (Note: The hyperlinks are linked to ../webpage to connect to the landing page. So make sure the directories are in the correct hierarchy.)
 
-Credits: Start Bootstrap for providing Creative template
+Credits: Start Bootstrap for providing My SB2 template
